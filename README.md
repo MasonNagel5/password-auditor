@@ -40,15 +40,19 @@ python3 auditor.py password123 mysecurepass! letmein
 ```
 
 ## Example output
+```
 ==================================================
-PASSWORD AUDIT REPORT
-Strength Score : 35/100
-Strength Label : WEAK
-Breach Status  : ⚠️  COMPROMISED (34,521 times)
-Suggestions:
-• Add uppercase letters
-• Add special characters (!@#$% etc)
+  PASSWORD AUDIT REPORT
+==================================================
+  Strength Score : 35/100
+  Strength Label : WEAK
+  Breach Status  : COMPROMISED (34,521 times)
 
+  Suggestions:
+    • Add uppercase letters
+    • Add special characters (!@#$% etc)
+==================================================
+```
 ## How the breach check works
 
 Sending passwords in plaintext to any external API would be a security risk in itself. To avoid this, the tool implements k-anonymity:
